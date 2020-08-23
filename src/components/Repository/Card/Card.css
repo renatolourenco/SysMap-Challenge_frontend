@@ -1,0 +1,61 @@
+.repository-card {
+    align-items: flex-start;
+    border: 1px solid #c3c3c3;
+    border-radius: 8px;
+    box-shadow: 0 2px 7px 0 rgba(0,0,0, 0.15);
+    display: flex;
+    padding: 15px;
+}
+
+.repository-card__image {
+    margin-right: 20px;
+    max-width: 100px;
+}
+
+.repository-card__title {
+    color: #2c3e50;
+    font-size: 20px;
+}
+
+.repository-card__description {
+    color: #95A5A6;
+}
+
+.repository-card__creation, .repository-card__last-update {
+    font-size: 10px;
+}
+
+.repository-card__creation-date, .repository-card__last-update-date {
+    color: #95A5A6;
+    font-size: 10px;
+}
+
+.repository-card__footer {
+    align-items: flex-end;
+    display: flex;
+    margin-top: 10px;
+}
+
+.repository-card__clone-info {
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.repository-card__https-clone, .repository-card__ssh-clone {
+    border: 1px solid #3498DB;
+    border-radius: 4px;
+    color: #3498DB;
+    font-size: 12px;
+    margin-right: 10px;
+    padding: 4px 5px;
+    text-decoration: none;
+}
+
+.repository-card__repo-link {
+    border: 1px solid #3498DB;
+    border-radius: 4px;
+    color: #3498DB;
+    padding: 8px 10px;
+    text-decoration: none;
+}

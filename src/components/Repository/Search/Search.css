@@ -1,0 +1,19 @@
+.repository-search__header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.repository-search__input {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    font-size: 16px;
+    height: 42px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    width: 100%;
+}
+
+
