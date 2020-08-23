@@ -21,20 +21,20 @@ const RepositoryCard = ({ repository }) => (
             <footer className="repository-card__footer">
                 <span className="repository-card__clone-info"> Clone with </span>
 
-                <a
-                    href={repository.ssh_url}
+                <button
                     rel="noopener noreferrer"
                     className="repository-card__ssh-clone"
+                    onClick={() =>  navigator.clipboard.writeText(repository.ssh_url)}
                 >
                     SSH
-                    </a>
-                <a
-                    href={repository.clone_url}
+                    </button>
+                <button
                     rel="noopener noreferrer"
                     className="repository-card__https-clone"
+                    onClick={() =>  navigator.clipboard.writeText(repository.clone_url)}
                 >
                     HTTPS
-                    </a>
+                    </button>
                 <a
                     href={repository.html_url}
                     target="_blank"

@@ -43,9 +43,11 @@
 }
 
 .repository-card__https-clone, .repository-card__ssh-clone {
+    background-color: #FFF;
     border: 1px solid #3498DB;
     border-radius: 4px;
     color: #3498DB;
+    cursor: pointer;
     font-size: 12px;
     margin-right: 10px;
     padding: 4px 5px;
