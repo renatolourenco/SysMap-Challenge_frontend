@@ -1,3 +1,11 @@
-.repository-list .repository-card {
+.repository-list__card .repository-card {
     margin-bottom: 15px;
+}
+
+.repository-list__load-msg {
+    align-items: center;
+    color: #95A5A6;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
