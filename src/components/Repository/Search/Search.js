@@ -16,8 +16,16 @@ const RepositorySearch = () => {
 
             axios.get(`http://localhost:3003/repo/${ev.target.value}`)
                 .then(resp => {
-                    setLoadingMsg(null);
-                    setrepositories(resp['data']);
+                    if (resp['data']['message'] && resp['data']['message'] === 'Not Found') {
+                        setLoadingMsg('User Not Found on Github');
+                    } else {
+                        if (resp['data'].length === 0) {
+                            setLoadingMsg(`User don't have repositories`);
+                        } else {
+                            setLoadingMsg(null);
+                            setrepositories(resp['data']);
+                        }
+                    }
                 });
         }
     }
